@@ -16,7 +16,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Dock
-defaults write com.apple.Dock autohide -bool true
+defaults write com.apple.Dock autohide -bool false
 
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
