@@ -15,9 +15,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-# Dock
-defaults write com.apple.Dock autohide -bool false
-
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
 
@@ -29,6 +26,7 @@ brew analytics off
 brew install wget
 brew install mysql
 brew install python
+brew install dockutil
 
 # Python
 easy_install pip
@@ -36,6 +34,12 @@ pip install --upgrade distribute
 
 # Install npm
 curl http://npmjs.org/install.sh | clean=no sh
+
+#iTerm
+wget https://iterm2.com/downloads/stable/iTerm2-3_3_9.zip
+tar xf iTerm2-3_3_9.zip
+mv iTerm.app /Applications
+rm iTerm2-3_3_9.zip 
 
 # Vim
 #oh-my-zsh
@@ -61,7 +65,22 @@ cd ~/.vim/pack/tpope/start
 git clone https://tpope.io/vim/fugitive.git
 vim -u NONE -c "helptags fugitive/doc" -c q
 #vimrc
-mv .vimrc ~/
+cp ./.vimrc ~/
 
-#iTerm
-#gruvbox-dark
+# Dock
+defaults write com.apple.Dock autohide -bool false
+defaults write com.apple.dock show-recents -bool false
+killall 'Dock'
+
+#Dockutil
+dockutil --remove 'Downloads'
+dockutil --remove 'System Preferences'
+dockutil --remove 'TV'
+dockutil --remove 'Messages'
+dockutil --remove 'Photos'
+dockutil --remove 'Reminders'
+dockutil --remove 'Calendar'
+dockutil --remove 'Mission Control'
+
+#Time Capsule
+sudo tmutil enable
