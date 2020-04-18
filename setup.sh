@@ -84,3 +84,8 @@ dockutil --remove 'Mission Control'
 
 #Time Capsule
 sudo tmutil enable
+
+#Menu enable
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
+killall SystemUIServer
+
