@@ -60,3 +60,6 @@ sudo tmutil enable
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
 killall SystemUIServer
 
+# To do:
+# Softwares: MacVim, Slack, Discord, Zoom
+# Menu: Finder, Launchpad, Settings, Mail, Music, Slack, MacVim, Discord, AppStore, Safari, Terminal
