@@ -62,4 +62,4 @@ killall SystemUIServer
 
 # To do:
 # Softwares: MacVim, Slack, Discord, Zoom
-# Menu: Finder, Launchpad, Settings, Mail, Music, Slack, MacVim, Discord, AppStore, Safari, Terminal
+# Menu: Finder, Launchpad, Settings, Mail, Music, Slack, MacVim, Terminal, Discord, AppStore, Safari
