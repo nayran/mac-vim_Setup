@@ -27,6 +27,7 @@ brew install wget
 brew install mysql
 brew install python
 brew install dockutil
+brew install unrar
 
 # Python
 easy_install pip
