@@ -22,3 +22,5 @@
  cd ~/.vim/pack/tpope/start                                                      
  git clone https://tpope.io/vim/fugitive.git                                     
  vim -u NONE -c "helptags fugitive/doc" -c q                                     
+ cd ~/.vim/bundle
+ git clone https://github.com/dense-analysis/ale.git
