@@ -24,3 +24,4 @@
  vim -u NONE -c "helptags fugitive/doc" -c q                                     
  cd ~/.vim/bundle
  git clone https://github.com/dense-analysis/ale.git
+ git clone https://github.com/scrooloose/syntastic
