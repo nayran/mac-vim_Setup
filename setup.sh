@@ -61,6 +61,15 @@ sudo tmutil enable
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
 killall SystemUIServer
 
+# Norminette
+pip3 install norminette
+
+# 42Header
+export MAIL="nayranziebell@icloud.com"
+git clone https://github.com/42Paris/42header.git
+mkdir -p ~/.vim/plugin
+mv ./42header/vim/stdheader.vim ~/.vim/plugin/stdheader.vim
+rm -rf ./42header
+
 # To do:
 # Softwares: MacVim, Slack, Discord, Zoom
-# Menu: Finder, Launchpad, Settings, Mail, Music, Slack, MacVim, Terminal, Discord, AppStore, Safari
