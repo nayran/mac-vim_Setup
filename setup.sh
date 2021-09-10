@@ -71,5 +71,8 @@ mkdir -p ~/.vim/plugin
 mv ./42header/vim/stdheader.vim ~/.vim/plugin/stdheader.vim
 rm -rf ./42header
 
+# alias to folder
+echo 'alias 42="cd /Users/nayran/Desktop/42"' >> ~/.zshrc
+
 # To do:
 # Softwares: MacVim, Slack, Discord, Zoom
