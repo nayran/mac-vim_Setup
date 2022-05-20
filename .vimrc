@@ -32,3 +32,4 @@ set showcmd
 set number
 set ruler
 set hidden
+set shell=/bin/bash
